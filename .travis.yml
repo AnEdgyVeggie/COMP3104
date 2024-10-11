@@ -5,11 +5,7 @@ node_js:
 
 branches:
   only:
-  - master
-
-cache:
-  directories:
-  - node_modules
+  - main
 
 install:
   - npm install
@@ -25,4 +21,4 @@ deploy:
   github_token: $github_token
   local_dir: build
   on:
-    branch: master
+    branch: main
